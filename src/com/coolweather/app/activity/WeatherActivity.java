@@ -38,6 +38,7 @@ public class WeatherActivity extends Activity implements OnClickListener {
 	private Button switchiCity;
 	//更新天气按钮
 	private Button refreshWeather;
+	
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		// TODO Auto-generated method stub
@@ -85,6 +86,7 @@ public class WeatherActivity extends Activity implements OnClickListener {
 			if (TextUtils.isEmpty(weatherCode)) {
 				queryWeatherInfo(weatherCode);
 			}
+			
 			break;
 
 		default:
